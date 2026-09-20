@@ -2,12 +2,12 @@
 
 ## Technologies Used
 
-Python 3.13
-ChromaDB (vector store)
-sentence-transformers/all-MiniLM-L6-v2 (Embeddings model)
-gemini-3.5-flash-lite (LLM model)
-LangChain
-FastMCP
+- Python 3.13
+- ChromaDB (vector store)
+- sentence-transformers/all-MiniLM-L6-v2 (Embeddings model)
+- gemini-3.5-flash-lite (LLM model)
+- LangChain
+- FastMCP
 
 ## Project Architecture
 
@@ -93,7 +93,7 @@ system_prompt = (
             "Guidelines for Output: "
             "1. Synthesize the information smoothly. Clean up any raw markdown headers, tags, or structural text artifacts retrieved from the source documents. "
             "2. Present your answers using clean, professional Markdown formatting (bullet points, bold text, and clear section dividers). "
-            "3. **Ensure strict text spacing:** Never let words, numbers, punctuation, or brackets collide (e.g., always leave spaces around numbers, prices, and parentheses like '$34 respectively'). "
+            "3. Ensure strict text spacing: Never let words, numbers, punctuation, or brackets collide (e.g., always leave spaces around numbers, prices, and parentheses like '$34 respectively'). "
             "4. Always cite your sources clearly at the end or within the response when referencing knowledge-base content. "
             "5. Do not invent facts, numbers, or URLs that are not in tool results or retrieved content."
         )
@@ -117,7 +117,7 @@ Run:
 
 python ingest.py
 
-## 8. Run the Application
+## Run the Application
 
 ### Streamlit UI
 
@@ -132,7 +132,9 @@ Type exit to close CLI session.
 ## Sample questions and response
 
 Q - `I have INR 60000 budget, convert to SGD and suggest three-day itinerary.`
+
 Response - 
+
 Based on the current exchange rate, your budget of INR 60000 converts to approximately SGD 799.80. This provides a comfortable budget for a 3 - day trip when balancing ticketed attractions with street food and public transit.
 
 Here is a 3 - day suggested itinerary covering Singapore's iconic landmarks and cultural neighborhoods:
@@ -155,6 +157,7 @@ Evening : Spend your final evening shopping or enjoying local cuisine in one of 
 Sources: Visit Singapore ( https://www.visitsingapore.com/see-do-singapore/ and https://www.visitsingapore.com/singapore-itineraries/ )
 
 Q - `adjust the activities based on the weather forecast for all 3 days`
+
 Response - 
 
 Here is the weather forecast for your 3 - day trip to Singapore:
@@ -185,6 +188,7 @@ Evening : Wrap up your trip exploring the colorful indoor shophouse boutiques an
 Sources: Visit Singapore ( https://www.visitsingapore.com/see-do-singapore/ )
 
 Q - `What are the must-visit attractions in Singapore?`
+
 Response - 
 
 Singapore offers a vibrant mix of iconic modern architecture, rich cultural neighborhoods, and lush green spaces. Here are the must-visit attractions categorized by what they have to offer:
@@ -208,6 +212,7 @@ Nature Reserves & Parks: Perfect for outdoor enthusiasts looking to experience S
 Source: Visit Singapore ( https://www.visitsingapore.com/see-do-singapore/ )
 
 Q- `what about the smoking rules?`
+
 Response - 
 Singapore has very strict laws regarding smoking, and regulations are heavily enforced. Here is what you need to know:
 
@@ -218,7 +223,8 @@ Fines: Violating smoking regulations can result in heavy fines.
 Source: Visit Singapore ( https://www.visitsingapore.com/travel-tips/essential-travel-information/ )
 
 
-More Question which I asked - 
+
+### More Question which I asked - 
 
 - How can a tourist travel around Singapore?
 - What is the weather in Singapore today?
